@@ -1,0 +1,17 @@
+---
+import Layout from "../layouts/Layout.astro";
+import EditorPage from "@/components/EditorPage";
+import {Fragment} from "react";
+
+// Metadata is set in the Layout or directly here
+const pageTitle = "Chandcon";
+const pageDescription =
+  "Chandcon is a CSS theme editor for shadcn/ui and Tailwind CSS";
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <Fragment slot="head">
+    {/* Place ThemeScript or other head scripts here if needed */}
+  </Fragment>
+  <EditorPage client:only="react" />
+</Layout>
