@@ -14,8 +14,8 @@ interface ThemeRegistry {
 function generateRegistry() {
   const registry: ThemeRegistry = {
     $schema: "https://ui.shadcn.com/schema/registry.json",
-    name: "Chadcon-theme-registry",
-    homepage: "https://Chadcon.com",
+    name: "chadcon-theme-registry",
+    homepage: "https://chadcon.com",
     items: []
   };
 

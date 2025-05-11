@@ -5,7 +5,7 @@ import {
   type ThemeSchema
 } from "@/types/theme";
 
-const STORAGE_KEY = "Chadcon_themes";
+const STORAGE_KEY = "chadcon_themes";
 
 const createThemeSchema = z.object({
   name: z.string().min(1, "Theme name cannot be empty"),
